@@ -46,9 +46,7 @@ We will simulate a simple physical system: a particle trying to find the minimum
 We know the minimum is at **x=0**, but let's see if the machine can find it using "gravity".
 
 ***The Python Experiment:***
-````
-Python
-```
+*Python*
 ```
 import torch   	
 
@@ -97,5 +95,6 @@ If you run this, you will see the position drop from ```10.0``` to ```8.0```, th
 ### Exercises
 1. **Friction:** Try adding ```momentum=0.9``` to the optimizer.How does this change the speed of convergence?
 2. **Complex Terrain:** Change the energy function to ```energy = (position - 5) ** 2```. Where does the particle settle?
+
 
 
