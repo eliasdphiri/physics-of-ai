@@ -1,0 +1,7 @@
+torch>=2.0.0          # The Physics Engine
+numpy>=1.24.0         # The Math
+matplotlib>=3.7.0     # The Visualization
+requests>=2.28.0      # The Networking
+langchain>=0.1.0      # The Agent Framework
+openai>=1.0.0         # The LLM Access
+chromadb>=0.4.0       # The Memory (Vector DB)

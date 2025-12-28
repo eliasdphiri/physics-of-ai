@@ -7,7 +7,7 @@
 Welcome to the open-source repository for *The Physics Approach to AI*. This book deconstructs modern Artificial Intelligence—from Neural Networks to Agentic Swarms—using the first principles of physics, thermodynamics, and control theory.
 
 ## 📖 Read the Book
-You can read the live version of this book here: **(https://eliasdphiri.gitbook.io/physics-of-ai/)**
+You can read the live version of this book here: **(https://eliasdanphiri.gitbook.io/physics-of-ai/)**
 
 ## 🧪 About This Project
 This text is designed for engineers, physicists, and curious coders who want to understand the *mechanism* behind the hype. It uses:
