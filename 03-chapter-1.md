@@ -26,8 +26,10 @@ Imagine you are standing on a rugged terrain.
 Your goal is to reach sea level (Zero Error). But it is dark, and you can only feel the slope of the ground beneath your feet.
 
 > **THEORY LAB:**
+> 
 > In physics, Potential Energy **U** creates a force **F**.
 > The relationship is **F = -∇U** (Force is the negative gradient of potential energy).
+>
 > In AI, we use the gradient of the Loss function to "push" our weights toward the solution.
 
 ### Setting Up Your Laboratory
@@ -97,6 +99,7 @@ If you run this, you will see the position drop from ```10.0``` to ```8.0```, th
 ### Exercises
 1. **Friction:** Try adding ```momentum=0.9``` to the optimizer.How does this change the speed of convergence?
 2. **Complex Terrain:** Change the energy function to ```energy = (position - 5) ** 2```. Where does the particle settle?
+
 
 
 
