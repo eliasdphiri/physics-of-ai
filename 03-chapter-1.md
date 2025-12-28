@@ -47,7 +47,9 @@ We know the minimum is at **x=0**, but let's see if the machine can find it usin
 
 ***The Python Experiment:***
 ````
-Python 
+Python
+```
+```
 import torch   	
 
 # 1. Initialize the Particle (The Weight)
@@ -89,9 +91,11 @@ print(f"Final Position: {position.item():.4f} m")
 If you run this, you will see the position drop from ```10.0``` to ```8.0```, then ```6.4```, eventually settling near ```0.0```.
 * **The Gradient:** At **x=10**, the slope is steep (**2x = 20**). The force is strong.
 * **The Convergence:** As **x** approaches 0, the slope decreases.The force gets weaker. The particle gently settles at the bottom.
+
   **WARNING:** If you set your ```learning_rate``` too high (e.g., **1.1** in this specific setup), the particle will gain too much energy and fly off to infinity. In physics, this is an explosion. In AI, we call this the "Exploding Gradient Problem".
 
 ### Exercises
 1. **Friction:** Try adding ```momentum=0.9``` to the optimizer.How does this change the speed of convergence?
 2. **Complex Terrain:** Change the energy function to ```energy = (position - 5) ** 2```. Where does the particle settle?
+
 
