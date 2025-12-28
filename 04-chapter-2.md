@@ -14,8 +14,7 @@ If Machine Learning is the study of materials, the **Neuron** is the atom. Every
 
 
 
-![Biological vs Artificial Neuron](images/neuron-comparison.png)
-
+![Biological vs Artificial Neuron](images/neuron-comparison.jfif)
 
 A single neuron performs a weighted summation of inputs. It is essentially calculating the net force acting on an object.
 
@@ -112,5 +111,6 @@ A single neuron can solve the **AND** problem. But try to teach it **XOR** (Excl
 ### Coming Up Next
 
 In Part II, we will take these atoms and build complex structures—Neural Networks—that can see, read, and predict the future.
+
 
 
