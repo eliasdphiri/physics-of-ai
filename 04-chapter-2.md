@@ -105,10 +105,12 @@ print(model(X).detach().round())
 A single neuron can solve the **AND** problem. But try to teach it **XOR** (Exclusive OR), where (1,1) outputs 0. It will fail.
 
 > **THEORY LAB:**
+> 
 > A single linear neuron can only separate data with a straight line. XOR requires two lines to separate the data. In physics terms, the data is not "linearly separable."
 > To solve this, we need to bond atoms together into molecules. We need a **Multi-Layer Perceptron**.
 
 ### Coming Up Next
 
 In Part II, we will take these atoms and build complex structures—Neural Networks—that can see, read, and predict the future.
+
 
