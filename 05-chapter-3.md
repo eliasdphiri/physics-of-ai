@@ -49,7 +49,7 @@ Think of this as **Force Transmission**. You apply a force at the output (the er
 
 
 
-![Backpropagation Diagram](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Backpropagation_in_neural_networks.png/800px-Backpropagation_in_neural_networks.png)
+![Backpropagation Diagram](images/Backpropagation-in-a-neural-network.jfif)
 
 
 ### The Solvers: SGD vs. Adam
@@ -141,4 +141,5 @@ This is why early neural networks failed. We solved this in the 2010s using:
 We now understand the physics of the single atom (Neuron) and the laws of motion (Gradient Descent). It is time to build.
 
 In **Part II**, we will combine these atoms into massive structures. We will build **Multi-Layer Perceptrons**, **Convolutional Networks** (eyes), and **Transformers** (language brains).
+
 
