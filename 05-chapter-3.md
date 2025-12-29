@@ -17,7 +17,7 @@ Navigating this space to find the lowest energy state (the solution) is the cent
 
 ### The Gradient Vector: Your Compass
 
-If you are standing on a mountain in the pitch dark, you cannot see the peak or the valley. You can only feel the ground under your feet.
+If you are standing on a mountain in the dark, you cannot see the peak or the valley. You can only feel the ground under your feet.
 
 You feel the slope is steepest if you face North-East. That direction of steepest ascent is called the **Gradient**, denoted by the symbol nabla (**∇**).
 
@@ -32,6 +32,7 @@ To find the bottom, you simply turn 180 degrees from the Gradient and take a ste
 * **∇L:** The Gradient of the Loss function.
 
 > **THEORY LAB:**
+> 
 > In vector calculus, the gradient vector points in the direction of the greatest rate of increase of a function. Its magnitude (length) indicates how steep the slope is. If the length is 0, you are on flat ground (a plateau or a minimum).
 
 ### Backpropagation: The Transmission of Force
@@ -67,7 +68,7 @@ Once we know the direction (the gradient), how do we move?
     * **Benefit:** If it hits a small bump or pothole, its momentum carries it through. It doesn't stop immediately when the slope flattens.
 
 3.  **Adam (Adaptive Moment Estimation)**
-    * This is the standard for modern Deep Learning. It is like a smart rover with individual suspension for each wheel.
+    * This is the standard for modern Deep Learning. It is like a smart rover with independent suspension for each wheel.
     * **Physics:** It adapts the friction (learning rate) for each dimension individually based on how fast it is moving.
     * **Benefit:** Extremely efficient at navigating complex, warping landscapes.
 
@@ -111,6 +112,8 @@ print(f"Gradient of b (dQ/db): {b.grad.item()}")
 # Q = ... - b^2
 # dQ/db = -2b
 # At b=3: -2 * 3 = -6
+```
+
 
 **What just happened?**
 
@@ -138,3 +141,4 @@ This is why early neural networks failed. We solved this in the 2010s using:
 We now understand the physics of the single atom (Neuron) and the laws of motion (Gradient Descent). It is time to build.
 
 In **Part II**, we will combine these atoms into massive structures. We will build **Multi-Layer Perceptrons**, **Convolutional Networks** (eyes), and **Transformers** (language brains).
+
