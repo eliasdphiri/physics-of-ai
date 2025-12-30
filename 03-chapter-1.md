@@ -137,7 +137,7 @@ print("GRADIENT DESCENT SIMULATION: 1D Parabolic Potential")
 print("=" * 60)
 print(f"Initial Position: {position.item():.4f} m")
 print(f"Learning Rate: {learning_rate}")
-print("\n{'Iteration':<10} {'Position (m)':<15} {'Energy (J)':<15} {'Gradient':<15}")
+print(f"\n{'Iteration':<10} {'Position (m)':<15} {'Energy (J)':<15} {'Gradient':<15}")
 print("-" * 60)
 
 # 4. The Time Evolution Loop
@@ -737,4 +737,5 @@ We've mastered 1D gradient descent. But real neural networks live in spaces with
 We'll discover that intelligence emerges not from the complexity of individual units, but from their connections—just like in the human brain.
 
 The journey into deep learning begins now.
+
 
