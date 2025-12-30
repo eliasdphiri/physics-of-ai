@@ -25,9 +25,9 @@ Artificial Intelligence works on the exact same principle. We don't "teach" a co
 
 When you hear that a model "learned" to recognize cats, what really happened is this: The model started with random garbage parameters, calculated how wrong it was (potential energy), felt which direction was downhill (gradient), took a step, and repeated this process millions of times until it settled at the bottom of the valley.
 
-**THEORY LAB:** In physics, potential energy U creates a force F⃗. The relationship is:
+**THEORY LAB:** In physics, potential energy U creates a force **F**. The relationship is:
 
-**F⃗ = -∇U**
+**F = -∇U**
 
 The force is the negative gradient of potential energy. In AI, we use the gradient of the Loss function ℒ to "push" our parameters θ toward the solution:
 
@@ -737,3 +737,4 @@ We've mastered 1D gradient descent. But real neural networks live in spaces with
 We'll discover that intelligence emerges not from the complexity of individual units, but from their connections—just like in the human brain.
 
 The journey into deep learning begins now.
+
