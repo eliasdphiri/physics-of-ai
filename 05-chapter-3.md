@@ -15,7 +15,7 @@
 
 In Chapter 1, we rolled a ball down a simple U-shaped valley. That was easy physics—you could solve it with high school calculus. One parameter, one dimension, one valley.
 
-But a modern Neural Network—like the one powering GPT-4—doesn't have just one parameter (x). It has **175 billion parameters**. Imagine a landscape not with North and East, but with 175 billion cardinal directions.
+But a modern Neural Network, like the one powering GPT-4 doesn't have just one parameter (x). It has **175 billion parameters**. Imagine a landscape not with North and East, but with 175 billion cardinal directions.
 
 This is **High-Dimensional Space**, and it's profoundly different from our intuition.
 
@@ -211,7 +211,7 @@ plt.show()
 **Key Observations:**
 
 1. **Spiral Path:** The trajectory spirals inward toward (0, 0)
-2. **Gradient Vectors:** Orange arrows show the negative gradient direction—always pointing toward the minimum
+2. **Gradient Vectors:** Orange arrows show the negative gradient direction, always pointing toward the minimum
 3. **Exponential Decay:** Loss decreases exponentially (linear on log scale)
 4. **Final Convergence:** Reaches near-zero loss in ~30 iterations
 
@@ -836,3 +836,4 @@ We've mastered the foundations:
 In **Part II**, we'll assemble these components into powerful structures: Multi-Layer Perceptrons, Convolutional Networks for vision, and Recurrent Networks for sequences.
 
 The atoms are bonding. The molecules are forming. Intelligence is emerging.
+
