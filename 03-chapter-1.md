@@ -522,7 +522,7 @@ Let's connect this to actual machine learning. We'll train a trivial linear mode
 
 ### The Experiment
 
-```python
+```
 """
 Lab 1.5: Training a Linear Model
 Using gradient descent to learn y = 2x + 3
@@ -562,6 +562,7 @@ for epoch in range(100):
     loss.backward()
     
     # Store history
+    # .item() extracts the standard Python float value from the tensor
     losses.append(loss.item())
     w_history.append(w.item())
     b_history.append(b.item())
@@ -579,10 +580,22 @@ print(f"Learned parameters: w = {w.item():.4f}, b = {b.item():.4f}")
 # Visualization
 fig, axes = plt.subplots(1, 3, figsize=(16, 5))
 
+# Matplotlib requires data to be detached from the computational graph and 
+# converted to numpy arrays. We use .detach().numpy() for tensors with grads.
+# X and y_true do not have requires_grad, so .numpy() is enough for them.
+X_np = X.numpy()
+y_true_np = y_true.numpy()
+
+# Calculate fitted line. Since w and b have requires_grad=True, we must detach.
+y_pred_np = (X @ w + b).detach().numpy()
+y_true_line_np = (2 * X + 3).numpy()
+
 # Plot 1: Data and fitted line
-axes[0].scatter(X, y_true, alpha=0.6, label='Training Data')
-axes[0].plot(X, X @ w + b, 'r-', linewidth=2, label=f'Fitted: y={w.item():.2f}x+{b.item():.2f}')
-axes[0].plot(X, 2*X + 3, 'g--', linewidth=2, label='True: y=2x+3')
+axes[0].scatter(X_np, y_true_np, alpha=0.6, label='Training Data')
+axes[0].plot(X_np, y_pred_np, 'r-', linewidth=2, label=f'Fitted: y={w.item():.2f}x+{b.item():.2f}')
+axes[0].plot(X_np, y_true_line_np, 'g--', linewidth=2, label='True: y=2x+3')
+# --- FIX END ---
+
 axes[0].set_xlabel('X', fontsize=11)
 axes[0].set_ylabel('y', fontsize=11)
 axes[0].set_title('Linear Regression via Gradient Descent', fontsize=12, fontweight='bold')
@@ -737,5 +750,6 @@ We've mastered 1D gradient descent. But real neural networks live in spaces with
 We'll discover that intelligence emerges not from the complexity of individual units, but from their connections—just like in the human brain.
 
 The journey into deep learning begins now.
+
 
 
